@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SearchOrder() {
@@ -17,6 +17,7 @@ function SearchOrder() {
         placeholder="Search Order #"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className="w-28 rounded-full bg-yellow-100 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 hover:w-96 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 sm:w-72 sm:focus:w-72"
       />
     </form>
   );
